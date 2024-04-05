@@ -1,0 +1,45 @@
+#include <stdio.h> 
+
+int main() { 
+
+int N; // Variável para armazenar a quan@dade de notas em cada conjunto de teste 
+
+// Loop principal para processar vários conjuntos de teste até que N seja igual a zero 
+
+while (1) { 
+
+scanf("%d", &N); // Lê o número de notas no conjunto de teste 
+
+if (N == 0) break; // Se N for igual a zero, sai do loop 
+
+int i, nota; // Variáveis para o loop  para armazenar cada nota lida 
+
+float soma = 0, menor = 10, maior = 0; // Variáveis para calcular a soma das notas e 
+
+iden@ficar a menor e a maior nota 
+
+// Loop para ler as N notas e calcular a soma, a menor e a maior nota 
+
+for (i = 0; i < N; i++) { 
+
+scanf("%d", &nota); // Lê cada nota do conjunto de teste 
+
+soma += nota; // Adiciona a nota à soma total 
+
+if (nota < menor) menor = nota; // Atualiza a menor nota, se necessário 
+
+if (nota > maior) maior = nota; // Atualiza a maior nota, se necessário 
+
+} 
+
+soma -= menor + maior; // Subtrai a menor e a maior nota da soma para calcular a 
+
+nota final 
+
+// Imprime a nota final do candidato 
+
+prin[("Nota final do candidato = %.0f\n", soma); 
+
+} 
+
+return 0;
